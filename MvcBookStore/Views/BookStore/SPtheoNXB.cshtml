@@ -1,0 +1,24 @@
+﻿@model IEnumerable<MvcBookStore.Models.SACH>
+
+@{
+    ViewBag.Title = "SPtheoNXB";
+    Layout = "~/Views/Share/_Layout.cshtml";
+}
+
+@foreach (var book in Model)
+{
+    <div class="templatemo_product_box">
+        <h1>@book.Tensach  <span>()</span></h1>
+        <img src="~/Images/@book.Anhbia" alt="image" />
+        <div class="product_info">
+            <p>@book.Mota</p>
+            <h3>@book.Giaban đ</h3>
+            <div class="buy_now_button"><a href="#">Buy Now</a></div>
+            <div class="detail_button"><a href="@Url.Action("Details","BookStore",new { id = book.Masach })">Detail</a></div>
+        </div>
+        <div class="cleaner">&nbsp;</div>
+    </div>
+}
+
+<a href="#"><img src="~/Images/templatemo_ads.jpg" alt="ads" /></a>
+
