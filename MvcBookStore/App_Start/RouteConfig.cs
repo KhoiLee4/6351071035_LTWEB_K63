@@ -17,6 +17,8 @@ namespace MvcBookStore
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "BookStore", action = "Index", id = UrlParameter.Optional }
+                //defaults: new { controller = "Nguoidung", action = "Dangnhap", id = UrlParameter.Optional }
+                //defaults: new { controller = "GioHang", action = "Giohang", id = UrlParameter.Optional }
             );
         }
     }

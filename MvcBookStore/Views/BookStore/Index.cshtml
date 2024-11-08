@@ -14,8 +14,8 @@
         <img src="~/Images/@book.Anhbia" alt="image" />
         <div class="product_info">
             <p>@book.Mota</p>
-            <h3>@book.Giaban đ</h3>
-            <div class="buy_now_button"><a href="#">Buy Now</a></div>
+            <h3>@string.Format("{0:0,0}", book.Giaban) VND</h3>
+            <div class="buy_now_button"><a href="@Url.Action("ThemGiohang", "GioHang", new {@iMasach = book.Masach, @strURL= Request.Url.ToString()})">Buy Now</a></div>
             <div class="detail_button"><a href="@Url.Action("Details","BookStore",new { id = book.Masach })">Detail</a></div>
         </div>
         <div class="cleaner">&nbsp;</div>

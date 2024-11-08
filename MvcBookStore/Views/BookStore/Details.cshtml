@@ -12,7 +12,7 @@
     <li><b>Giá bán:</b> @Model.Giaban</li>
 </ul>
 <div class="cleaner_with_height">&nbsp;</div>
-<div class="buy_now_button"><a href="#">Buy Now</a></div>
+<div class="buy_now_button"><a href="@Url.Action("ThemGiohang", "GioHang", new {@iMasach = @Model.Masach, @strURL= Request.Url.ToString()})">Buy Now</a></div>
 <div class="cleaner_with_height">&nbsp;</div>
 
 <a href="#"><img src="~/Images/templatemo_ads.jpg" alt="css template ad" /></a>

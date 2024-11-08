@@ -96,10 +96,22 @@
   <ItemGroup>
     <Content Include="Content\templatemo_style.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\anhbia11.jpg" />
+    <Content Include="Images\anhbia20.jpg" />
+    <Content Include="Images\anhbia12.jpg" />
+    <Content Include="Images\anhbia13.jpg" />
+    <Content Include="Images\anhbia14.jpg" />
+    <Content Include="Images\anhbia15.jpg" />
     <Content Include="Images\anhbia5.jpg" />
+    <Content Include="Images\anhbia16.jpg" />
     <Content Include="Images\anhbia6.jpg" />
+    <Content Include="Images\anhbia17.jpg" />
     <Content Include="Images\anhbia7.jpg" />
+    <Content Include="Images\anhbia18.jpg" />
     <Content Include="Images\anhbia8.jpg" />
+    <Content Include="Images\anhbia19.jpg" />
+    <Content Include="Images\anhbia9.jpg" />
+    <Content Include="Images\anhbia10.jpg" />
     <Content Include="Images\templatemo_ads.jpg" />
     <Content Include="Images\templatemo_bg.jpg" />
     <Content Include="Images\templatemo_btn_01.jpg" />
@@ -128,6 +140,8 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BookStoreController.cs" />
+    <Compile Include="Controllers\GioHangController.cs" />
+    <Compile Include="Controllers\NguoidungController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -155,6 +169,7 @@
     <Compile Include="Models\DONDATHANG.cs">
       <DependentUpon>BookStore.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Giohang.cs" />
     <Compile Include="Models\KHACHHANG.cs">
       <DependentUpon>BookStore.tt</DependentUpon>
     </Compile>
@@ -192,6 +207,12 @@
     <Content Include="Views\BookStore\SPtheochude.cshtml" />
     <Content Include="Views\BookStore\SPtheoNXB.cshtml" />
     <Content Include="Views\BookStore\Details.cshtml" />
+    <Content Include="Views\Nguoidung\Dangky.cshtml" />
+    <Content Include="Views\Nguoidung\Dangnhap.cshtml" />
+    <Content Include="Views\GioHang\GioHang.cshtml" />
+    <Content Include="Views\GioHang\GiohangPartial.cshtml" />
+    <Content Include="Views\GioHang\DatHang.cshtml" />
+    <Content Include="Views\GioHang\Xacnhandonhang.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
