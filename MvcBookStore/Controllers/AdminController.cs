@@ -200,9 +200,9 @@ namespace MvcBookStore.Controllers
         public ActionResult ThongKeSach()
         {
             var booksByCategory = db.SACHes
-   .GroupBy(s => s.CHUDE.TenChuDe)  // Assuming `Tenchude` is the category name in CHUDE
-   .Select(g => new { Category = g.Key, Count = g.Count() })
-   .ToList();
+                .GroupBy(s => s.CHUDE.TenChuDe)  // Assuming `Tenchude` is the category name in CHUDE
+                .Select(g => new { Category = g.Key, Count = g.Count() })
+                .ToList();
 
             ViewBag.ChartLabels = booksByCategory.Select(b => b.Category).ToArray();
             ViewBag.ChartData = booksByCategory.Select(b => b.Count).ToArray();
