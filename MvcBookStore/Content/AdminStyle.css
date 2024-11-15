@@ -1,0 +1,82 @@
+﻿/* Đặt căn bản cho toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Tạo hộp chứa cho form đăng nhập */
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Đặt kiểu chữ cho tiêu đề form */
+.login-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Đặt phong cách cho đoạn văn bản hướng dẫn */
+.login-container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Thông báo lỗi */
+h4 {
+    color: red;
+    text-align: center;
+    margin: 0;
+}
+
+/* Căn chỉnh các nhãn */
+.form-group label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Thiết kế các trường input */
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Thiết kế nút login */
+button.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+    button.btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+/* Thiết kế phần thông báo lỗi */
+.form-group .text-danger {
+    color: red;
+    font-size: 14px;
+}
